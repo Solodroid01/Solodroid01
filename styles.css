@@ -16,7 +16,7 @@ body {
   color: #eee;
 }
 body::-webkit-scrollbar {
-  background: url(./Image.webp);
+  background:none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
