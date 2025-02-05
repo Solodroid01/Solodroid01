@@ -1,0 +1,128 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(#06063683, rgba(5, 48, 27, 0.555)),
+    url(./Image.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #eee;
+}
+body::-webkit-scrollbar {
+  background: url(./Image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.71);
+}
+.container {
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.71);
+  backdrop-filter: blur(10px);
+  width: 60vw;
+  animation: 0.9s ease-in-out forwards ShowForm;
+  min-width: 350px;
+  transform: translateX(-100%);
+}
+@keyframes ShowForm {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#title {
+  text-transform: capitalize;
+  font-family: Pacifico;
+}
+#title,
+#description {
+  text-align: center;
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+  display: block;
+}
+input {
+  transition: 0.5s border, 0.6s box-shadow;
+}
+input,
+textarea,
+select {
+  background-color: rgba(0, 0, 0, 0.71);
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 6px;
+}
+input:user-invalid {
+  border: 2px solid rgb(175, 12, 5);
+  box-shadow: 0 0 6px rgb(175, 12, 5);
+}
+input:user-valid {
+  border: 2px solid rgb(14, 139, 5);
+  box-shadow: 0 0 6px springgreen;
+}
+textarea {
+  height: 200px;
+  resize: vertical;
+  font-size: 1.1rem;
+  font-family: system-ui;
+}
+.input-box,
+input,
+select {
+  min-height: 2em;
+}
+.input-box,
+input,
+textarea,
+select {
+  color: inherit;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0 0.5rem 0 0;
+}
+label {
+  display: inline-block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+input[type="submit"] {
+  border-radius: 9px;
+  background: rgb(17, 190, 4);
+  font-size: 0.9rem;
+  transition: 0.5s;
+  color: beige;
+  padding: 1rem 2rem;
+  box-shadow: 5px 5px 6px #000 inset, -5px -5px -6px #000 inset;
+}
+input[type="submit"]:hover {
+  box-shadow: 2px 2px 4px rgba(15, 212, 114, 0.815),
+    -6px -6px 4px rgb(37, 145, 93) inset;
+  background-color: rgb(14, 139, 5);
+  border-bottom: 3px solid green;
+}
+input::placeholder {
+  font-family: Pacifico;
+  font-size: 1.1em;
+}

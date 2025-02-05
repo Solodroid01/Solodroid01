@@ -1,0 +1,165 @@
+<!-- Thanks so much freecodecamp for taking me this far -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My Survey page project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey page - freecode camp project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Anime world</h1>
+        <p id="description">Home of all animes</p>
+      </header>
+      <form action="https://www.httpbin.org" method="post" id="survey-form">
+        <div class="input-box">
+          <label for="name-label"
+            >Name
+            <input
+              type="text"
+              name="name"
+              id="name-label"
+              placeholder="Enter your name"
+              autocomplete="on"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="input-box"></div>
+        <label for="email-label"
+          >Email
+          <input
+            type="email"
+            id="email-label"
+            placeholder="Enter your email"
+            autocomplete="on"
+            required
+          />
+        </label>
+        <div class="input-box">
+          <label for="number-label">
+            Enter your age
+            <input
+              type="number"
+              id="number-label"
+              placeholder="Enter your age"
+              min="13"
+              max="120"
+              autocomplete="on"
+              required
+          /></label>
+        </div>
+
+        <div class="input-box">
+          <label for="dropdown"
+            >What's your favourite anime
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="Naruto">Naruto</option>
+              <option value="Demon slayer">Demon slayer</option>
+              <option value="Others">Others 🤔</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <p>How would you rate our website</p>
+          <label for="good-rating"
+            ><input
+              type="radio"
+              name="rating"
+              id="good-rating"
+              checked
+              value="Good"
+              class="inline"
+            />Good</label
+          >
+          <label for="bad-rating"
+            ><input
+              type="radio"
+              name="rating"
+              id="bad-rating"
+              value="Bad"
+              class="inline"
+            />Bad</label
+          >
+          <label for="mixed-rating"
+            ><input
+              type="radio"
+              name="rating"
+              id="mixed-rating"
+              value="Can't decide"
+              class="inline"
+            />Can't decide</label
+          >
+        </div>
+
+        <div class="input-box">
+          <p>What anime would you like us to upload</p>
+
+          <label for="Seven deadly sins"
+            ><input
+              type="checkbox"
+              name="anime-choice"
+              id="Seven deadly sins"
+              value="Seven deadly sins"
+              class="inline"
+              checked
+            />Seven deadly sins</label
+          >
+          <label for="Solo-levelling"
+            ><input
+              type="checkbox"
+              name="anime-choice"
+              id="Solo-levelling"
+              value="Solo-levelling"
+              class="inline"
+            />Solo-levelling</label
+          >
+          <label for="Burrito"
+            ><input
+              type="checkbox"
+              name="anime-choice"
+              id="Burrito"
+              value="Burrito"
+              class="inline"
+            />Burrito</label
+          >
+          <label for="Hunter X hunter"
+            ><input
+              type="checkbox"
+              name="anime-choice"
+              id="Hunter X hunter"
+              value="Hunter X hunter"
+              class="inline"
+            />Hunter X hunter</label
+          >
+          <label for="Juditsu Kaisen"
+            ><input
+              type="checkbox"
+              name="anime-choice"
+              id="Juditsu Kaisen"
+              value="Juditsu Kaisen"
+              class="inline"
+            />Juditsu Kaisen</label
+          >
+        </div>
+
+        <div class="input-box">
+          <label for="comments">
+            Write your comments or suggestions so as to improve your experience
+            <textarea
+              id="comments"
+              placeholder="Write here to give your suggestions 🤔"
+            ></textarea>
+          </label>
+        </div>
+        <input type="submit" value="submit" rows="190" cols="45" />
+      </form>
+    </div>
+  </body>
+</html>
